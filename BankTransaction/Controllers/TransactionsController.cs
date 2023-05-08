@@ -156,6 +156,7 @@ namespace BankTransaction.Controllers
               //  return Problem("Entity set 'TransactionDbContext.Transactions'  is null.");
            // }
             var transaction = await _context.Transactions.FindAsync(id);
+            //var user = await _context.Transactions.Find(id);
             //if (transaction != null)
             //{
                 _context.Transactions.Remove(transaction);
